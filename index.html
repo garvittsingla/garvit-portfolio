@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-[#0C0C0C] text-[#E9E9E9] overflow-x-hidden">
+    <div id="cursor" class="h-[20px] w-[20px] bg-orange-500 fixed rounded-full z-[99] text-[5px] font-semibold text-center "></div>
+   <div id="page1" class="h-screen w-full">
+    <nav class="text-lg w-5/6 mx-auto flex justify-between font-['Ubuntu'] items-center h-24 ">
+       <div class="">Garvit Singla</div>
+       <div class="flex gap-6 drop-shadow-lg font-semibold">
+           <a class="hover:text-orange-500 " href="#page2">Skills</a>
+           <a class="hover:text-orange-500 " href="">Profiles</a>
+           <a class="hover:text-orange-500 "href="">Got a Question?</a>
+       </div>
+       
+    </nav>
+    <div class="flex w-5/6 mx-auto h-96 mt-16 " id="section1">
+       <div class="w-1/2 h-full flex flex-col items-center gap-10 mt-8">
+           <div class="flex flex-col items-center gap-3 " >
+               <span id="heading" class="font-['Mulish']   text-8xl leading-16 font-semibold text-center   "><span>Hi, I am </span><br><span><span class="">Garvit</span> Singla</span></span>
+               <div class="text-sm text-zinc-500">&lt;Web developer/&gt;</div>
+           </div>
+           <button id="projects" class="bg-orange-600 text-white px-3 py-2 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]">See my Projects</button>
+           <div id="para" class="text-zinc-600 font-semibold"> Hi, I'm Garvit Singla, a passionate web developer with expertise in <span class="text-orange-600 ">HTML, CSS, JavaScript, Tailwind, and GSAP</span>. I specialize in creating visually stunning, and dynamic web experiences. Currently exploring React to expand my skill set. Check out my projects to see how I bring creativity and functionality together in every build!
+
+           </div>
+       </div>
+       <div class="w-1/2 h-full rounded-lg bg-zinc-00 relative ">
+           <img id="svg1" src="svg1.svg" alt="">
+           <div id="pfp" class="absolute top-12 left-24 h-96 rounded-lg mx-auto bg-orange-600 p-4 shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]">
+            <div class="overlay bg-transparent h-full w-full absolute z-[999]"></div>
+            <a href="https://x.com/garvits093" target="_blank"><img   class="h-full rounded-lg   cursor-pointer" src="IMG_20240225_130724_142.webp" alt=""></a>
+           </div>
+           <div class="absolute right-12 bottom-0 ">
+               <img id="svg2" src="svg2.svg" alt="">
+           </div>
+         
+
+       </div>
+       <div class=" h-[550px] absolute right-10  flex items-end justify-end">
+            <span>Scroll Down </span>
+            <i class="text-orange-500 ri-arrow-down-line"></i>
+       </div>
+    </div>
+</div>
+
+<div id="page2" class="h-screen w-full px-4">
+    <div  class="mt-12 flex items-center justify-center h-[90%] pr-10 w-full relative ">
+        <div id="skillss" class="relative w-3/4 ">
+            <div class="shadow-[0px_0px_62px_22px_rgba(251,239,241,0.8)] h-[0.01px] w-[276px] right-[140px] top-[300px] -translate-x-[100%] -translate-y-[100%] absolute"></div>
+            <img     class=" "  src="Web development (1) (1).png" alt="">
+        </div>
+        <div class="bg-orange-600 text-white w-1/4 h-5/6 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)] py-4">
+            <h1 class="text-center mt-5 text-3xl font-semibold">My Skills <i class="ri-terminal-box-line"></i></h1>
+            <hr class="w-5/6 mx-auto mt-2 text-zinc-900">
+            <ul class=" space-y-4 mt-8 w-3/4 mx-auto ">
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">Python</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Intermediate</span>
+                </li>
+                
+
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">HTML</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Expert</span>
+                </li>
+
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">CSS</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Advanced</span>
+                </li>
+    
+
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">JavaScript</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Intermediate</span>
+                </li>
+    
+
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">GSAP</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Intermediate</span>
+                </li>
+    
+
+                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
+                    <div class="flex items-center">
+                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
+                        <span class="ml-3 text-lg font-medium text-white line-through">Tailwind CSS</span>
+                    </div>
+                    <span class="text-xs text-gray-200">Expert</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="script.js"></script>
+</body>
+</html>
