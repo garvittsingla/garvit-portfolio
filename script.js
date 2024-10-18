@@ -2,6 +2,7 @@ var tl = gsap.timeline()
 var body = document.querySelector("body")
 var pfp = document.querySelector("#pfp")
 var cursor = document.querySelector("#cursor")
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("nav a",{
     y:-100,
@@ -75,21 +76,32 @@ pfp.addEventListener("mouseleave",function(){
     })
 })
 
-tl.from("ul li",{
-    x:200,
-    duration:0.6,
-    stagger:0.4,
-    delay:0.2,
-    scrollTrigger:{
-        scroller:body,
-        trigger:"#page2",
-        markers:true,
-        start:"top 30%",
-        end:"top -100%",
-        // scrub:5,
+
+tl.from("ul li", {
+    x: 400,
+    duration: 3,
+    stagger: 0.2,
+    delay: 0.2,
+    scrollTrigger: {
+        trigger: "#page2",
+        markers: true,
+        start:"top 70%",
+        end:"top -9%",
+        scrub: true 
     }
-})
-tl.from("#skillss",{
-    opacity:0,
-    duration:0.5
-})
+});
+
+
+tl.from("#skillss", {
+    opacity: 0,
+    delay:0.4,
+    duration: 1,
+
+    scrollTrigger: {
+        trigger: "#skillss", 
+        markers: true, 
+        start: "top 80%", 
+        end: "top 20%",
+        scrub: true 
+    }
+});
