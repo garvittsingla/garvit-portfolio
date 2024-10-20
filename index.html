@@ -1,139 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body class="bg-[#0C0C0C] text-[#E9E9E9] overflow-x-hidden">
-    <div id="cursor" class="h-[20px] w-[20px] bg-orange-500 fixed rounded-full z-[99] text-[5px] font-semibold text-center "></div>
-   <div id="page1" class="h-screen w-full">
-    <nav class="text-lg w-5/6 mx-auto flex justify-between font-['Ubuntu'] items-center h-24 ">
-       <div class="">Garvit Singla</div>
-       <div class="flex gap-6 drop-shadow-lg font-semibold">
-           <a class="hover:text-orange-500 " href="#page2">Skills</a>
-           <a class="hover:text-orange-500 " href="">Profiles</a>
-           <a class="hover:text-orange-500 "href="">Got a Question?</a>
-       </div>
-       
-    </nav>
-    <div class="flex w-5/6 mx-auto h-96 mt-16 " id="section1">
-       <div class="w-1/2 h-full flex flex-col items-center gap-10 mt-8">
-           <div class="flex flex-col items-center gap-3 " >
-               <span id="heading" class="font-['Mulish']   text-8xl leading-16 font-semibold text-center   "><span>Hi, I am </span><br><span><span class="">Garvit</span> Singla</span></span>
-               <div class="text-sm text-zinc-500">&lt;Web developer/&gt;</div>
-           </div>
-           <button id="projects" class="bg-orange-600 text-white px-3 py-2 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]">See my Projects</button>
-           <div id="para" class="text-zinc-600 font-semibold"> Hi, I'm Garvit Singla, a passionate web developer with expertise in <span class="text-orange-600 ">HTML, CSS, JavaScript, Tailwind, and GSAP</span>. I specialize in creating visually stunning, and dynamic web experiences. Currently exploring React to expand my skill set. Check out my projects to see how I bring creativity and functionality together in every build!
-
-           </div>
-       </div>
-       <div class="w-1/2 h-full rounded-lg bg-zinc-00 relative ">
-           <img id="svg1" src="svg1.svg" alt="">
-           <div id="pfp" class="absolute top-12 left-24 h-96 rounded-lg mx-auto bg-orange-600 p-4 shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]">
-            <div class="overlay bg-transparent h-full w-full absolute z-[999]"></div>
-            <a href="https://x.com/garvits093" target="_blank"><img   class="h-full rounded-lg   cursor-pointer" src="IMG_20240225_130724_142.webp" alt=""></a>
-           </div>
-           <div class="absolute right-12 bottom-0 ">
-               <img id="svg2" src="svg2.svg" alt="">
-           </div>
-         
-
-       </div>
-       <div class=" h-[550px] absolute right-10  flex items-end justify-end">
-            <span>Scroll Down </span>
-            <i class="text-orange-500 ri-arrow-down-line"></i>
-       </div>
-    </div>
-</div>
-
-<div id="page2" class="h-screen w-full px-4">
-    <div  class="mt-12 flex items-center justify-center h-[90%] pr-10 w-full relative ">
-        <div id="skillss" class="relative w-3/4 ">
-            <div class="shadow-[0px_0px_62px_22px_rgba(251,239,241,0.8)] h-[0.01px] w-[276px] right-[140px] top-[300px] -translate-x-[100%] -translate-y-[100%] absolute"></div>
-            <img     class=" "  src="Web development (1) (1).png" alt="">
-            <div class="font-['Playwrite-GB-S'] text-3xl font-semibold text-center">&lt; <span class="text-orange-600">b</span>e Unique <span class="text-orange-600">b</span>e Different / &gt;</div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Garvit's Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+         rel="stylesheet"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+         rel="stylesheet"
+         />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body class="bg-[#0C0C0C] text-[#E9E9E9] overflow-x-hidden">
+      <div
+         id="cursor"
+         class="h-[20px] w-[20px] bg-orange-500 fixed rounded-full z-[99] text-[5px] font-semibold text-center"
+         ></div>
+      <div id="page1" class="h-screen w-full">
+         <nav
+            class="text-lg w-5/6 mx-auto flex justify-between font-['Ubuntu'] items-center h-24"
+            >
+            <div class="">Garvit Singla</div>
+            <div class="flex gap-6 drop-shadow-lg font-semibold">
+               <a class="hover:text-orange-500" href="#page2">Skills</a>
+               <a class="hover:text-orange-500" href="">Profiles</a>
+               <a class="hover:text-orange-500" href="">Got a Question?</a>
+            </div>
+         </nav>
+         <div class="flex w-5/6 mx-auto h-96 mt-16" id="section1">
+            <div class="w-1/2 h-full flex flex-col items-center gap-10 mt-8">
+               <div class="flex flex-col items-center gap-3">
+                  <span
+                     id="heading"
+                     class="font-['Mulish'] text-8xl leading-16 font-semibold text-center"
+                     ><span>Hi, I am </span><br /><span
+                     ><span class="">Garvit</span> Singla</span
+                     ></span
+                     >
+                  <div class="text-sm text-zinc-500">&lt;Web developer/&gt;</div>
+               </div>
+               <button
+                  onclick="location.href='#page3'"
+                  id="projects"
+                  class="bg-orange-600 text-white px-3 py-2 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]"
+                  >
+               See my Projects
+               </button>
+               <div id="para" class="text-zinc-600 font-semibold">
+                  Hi, I'm Garvit Singla, a passionate web developer with expertise in
+                  <span class="text-orange-600"
+                     >HTML, CSS, JavaScript, Tailwind, and GSAP</span
+                     >. I specialize in creating visually stunning, and dynamic web
+                  experiences. Currently exploring React to expand my skill set. Check
+                  out my projects to see how I bring creativity and functionality
+                  together in every build!
+               </div>
+            </div>
+            <div class="w-1/2 h-full rounded-lg bg-zinc-00 relative">
+               <img id="svg1" src="svg1.svg" alt="" />
+               <div
+                  id="pfp"
+                  class="absolute top-12 left-24 h-96 rounded-lg mx-auto bg-orange-600 p-4 shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)]"
+                  >
+                  <div
+                     class="overlay bg-transparent h-full w-full absolute z-[999]"
+                     ></div>
+                  <a href="https://x.com/garvits093" target="_blank"
+                     ><img
+                     class="h-full rounded-lg cursor-pointer"
+                     src="IMG_20240225_130724_142.webp"
+                     alt=""
+                     /></a>
+               </div>
+               <div class="absolute right-12 bottom-0">
+                  <img id="svg2" src="svg2.svg" alt="" />
+               </div>
+            </div>
+            <div class="h-[550px] absolute right-10 flex items-end justify-end">
+               <span>Scroll Down </span>
+               <i class="text-orange-500 ri-arrow-down-line"></i>
+            </div>
+         </div>
+      </div>
+      <div id="page2" class="h-screen w-full px-4">
+         <div
+            class="mt-12 flex items-center justify-center h-[90%] pr-10 w-full relative"
+            >
+            <div id="skillss" class="relative w-3/4">
+               <div
+                  class="shadow-[0px_0px_62px_22px_rgba(251,239,241,0.8)] h-[0.01px] w-[276px] right-[140px] top-[300px] -translate-x-[100%] -translate-y-[100%] absolute"
+                  ></div>
+               <img class=" " src="Web development (1) (1).png" alt="" />
+               <div
+                  class="font-['Playwrite-GB-S'] text-3xl font-semibold text-center"
+                  >
+                  &lt; <span class="text-orange-600">b</span>e Unique
+                  <span class="text-orange-600">b</span>e Different / &gt;
+               </div>
+            </div>
+            <div
+               class="bg-orange-600 text-white w-1/4 h-5/6 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)] py-4"
+               >
+               <h1 class="text-center mt-5 text-3xl font-semibold">
+                  My Skills <i class="ri-terminal-box-line"></i>
+               </h1>
+               <hr class="w-5/6 mx-auto mt-2 text-zinc-900" />
+               <ul class="space-y-4 mt-8 w-3/4 mx-auto">
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white "
+                           >Python</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Intermediate</span>
+                  </li>
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded focus:ring-white"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white"
+                           >HTML</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Expert</span>
+                  </li>
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded focus:ring-white"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white"
+                           >CSS</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Advanced</span>
+                  </li>
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded focus:ring-white"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white"
+                           >JavaScript</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Intermediate</span>
+                  </li>
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded focus:ring-white"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white"
+                           >GSAP</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Intermediate</span>
+                  </li>
+                  <li
+                     class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md"
+                     >
+                     <div class="flex items-center">
+                        <input
+                           type="checkbox"
+                           checked
+                           class="w-5 h-5 text-white border-white rounded focus:ring-white"
+                           disabled
+                           />
+                        <span class="ml-3 text-lg font-medium text-white"
+                           >Tailwind css</span
+                           >
+                     </div>
+                     <span class="text-xs text-gray-200">Intermediate</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="page3" class="h-fit w-full">
+        <div class="pt-2">
+          <h1 class="font-normal font-['Mulish'] mt-10 ml-10 font-semibold text-7xl">
+            Projects
+          </h1>
+          <div class="ml-60 mt-5 h-[1px] w-5/6 bg-zinc-200"></div>
         </div>
-
-        <div class="bg-orange-600 text-white w-1/4 h-5/6 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)] py-4">
-            <h1 class="text-center mt-5 text-3xl font-semibold">My Skills <i class="ri-terminal-box-line"></i></h1>
-            <hr class="w-5/6 mx-auto mt-2 text-zinc-900">
-            <ul class=" space-y-4 mt-8 w-3/4 mx-auto ">
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">Python</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Intermediate</span>
-                </li>
-                
-
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">HTML</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Expert</span>
-                </li>
-
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">CSS</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Advanced</span>
-                </li>
-    
-
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">JavaScript</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Intermediate</span>
-                </li>
-    
-
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">GSAP</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Intermediate</span>
-                </li>
-    
-
-                <li class="flex items-center justify-between px-4 py-3 bg-black rounded-lg shadow-md ">
-                    <div class="flex items-center">
-                        <input type="checkbox" checked class="w-5 h-5 text-white border-white rounded focus:ring-white" disabled>
-                        <span class="ml-3 text-lg font-medium text-white line-through">Tailwind CSS</span>
-                    </div>
-                    <span class="text-xs text-gray-200">Expert</span>
-                </li>
-            </ul>
+      
+        <div class="h-[60%] w-full mt-6 px-5">
+          <h1 class="text-zinc-500 text-5xl">1. Flux-Media player</h1>
+          <div class="w-full h-full flex mt-4">
+            <div class="px-10 py-20 w-1/2 h-full">
+              <h1 class="mb-5 w-1/2 text-xl">
+                Flux Media player - It is my first year FEE project. I made this with
+                <span class="text-orange-600">HTML, CSS, Javascript.</span> Here is
+                the link to this project's Github repository:
+                <br /><br /><br />
+                For a live demo of the website, hover over the video demo playing.
+              </h1>
+              <a
+                class="ml-20 hover:text-orange-500"
+                target="_blank"
+                href="https://github.com/garvittsingla/flux"
+                >Github Link: https://github.com/garvittsingla/flux</a
+              >
+            </div>
+            <div class="w-1/2 flex items-center justify-center h-full">
+              <div id="vid1" class="w-[95%] h-full rounded-lg items-center flex relative justify-center">
+                <div class="bg-transparent h-full w-full absolute z-[10]"></div>
+                <video loop muted autoplay class="shadow-[0px_0px_11px_10px_rgba(34,18,40,0.6)] w-full" src="flux.mp4"></video>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="ml-60 mt-20 h-[1px] w-5/6 bg-zinc-200"></div>
+      
+        <div class="h-[60%] w-full mt-6 px-5">
+          <h1 class="text-zinc-500 text-5xl">2. Valorant website clone</h1>
+          <div class="w-full h-full flex mt-4">
+            <div class="px-10 py-20 w-1/2 h-full">
+              <h1 class="mb-5 w-1/2 text-xl">
+                Valorant website clone - I created this Valorant website clone with
+                the help of
+                <span class="text-orange-600">HTML, CSS, Javascript.</span> Here is
+                the link to this project's Github repository:
+                <br /><br /><br />
+                For a live demo of the website, hover over the video demo playing.
+              </h1>
+              <a
+                class="ml-20 hover:text-orange-500"
+                target="_blank"
+                href="https://github.com/garvittsingla/valorant-website-clone"
+                >Github Link:
+                https://github.com/garvittsingla/valorant-website-clone</a
+              >
+            </div>
+            <div class="w-1/2 flex items-center justify-center h-full">
+              <div id="vid2" class="w-[95%] h-full rounded-lg items-center flex relative justify-center">
+                <div class="bg-transparent h-full w-full absolute z-[10]"></div>
+                <video loop muted autoplay class="shadow-[0px_0px_38px_0px_rgba(255,69,101,0.6)] w-full" src="valorant.mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-60 mt-20 h-[1px] w-5/6 bg-zinc-200"></div>
+      
+        <div class="h-[60%] w-full mt-6 px-5">
+          <h1 class="text-zinc-500 text-5xl">3. Bitebox - Food delivery site</h1>
+          <div class="w-full h-full flex mt-4">
+            <div class="px-10 py-20 w-1/2 h-full">
+              <h1 class="mb-5 w-1/2 text-xl">
+                Bitebox - I created this website with the help of
+                <span class="text-orange-600">HTML, CSS, Javascript.</span> It is a
+                basic website without any database or major technologies. Here is the
+                link to this project's Github repository:
+                <br /><br /><br />
+                For a live demo of the website, hover over the video demo playing.
+              </h1>
+              <a
+                class="ml-20 hover:text-orange-500"
+                target="_blank"
+                href="https://github.com/garvittsingla/bitebox-food-website"
+                >Github Link:
+                https://github.com/garvittsingla/bitebox-food-website</a
+              >
+            </div>
+            <div class="w-1/2 flex items-center justify-center h-full">
+              <div id="vid3" class="w-[95%] h-full rounded-lg items-center flex relative justify-center">
+                <div class="bg-transparent h-full w-full absolute z-[10]"></div>
+                <video loop muted autoplay class="shadow-[0px_0px_38px_21px_rgba(34,9,49,0.9)] w-full" src="bitebox.mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-60 mt-20 h-[1px] w-5/6 bg-zinc-200"></div>
+      </div>
+      <div id="page4" class="h-screen w-full py-1">
+        <h1 class="font-normal font-['Mulish'] mt-10 ml-10 font-semibold text-7xl">
+          Profiles
+        </h1>
+        <div class="h-[70%] w-full mt-10 flex gap-8 items-center justify-center">
+          <div class="w-1/5 h-full bg-orange-500 rounded-lg">
+            <img class="w-[95%] mx-auto rounded-lg mt-5" src="github.png" alt="">
+            <div class="h-[1px] bg-gray-100 mt-4"></div>
+            <div class="w-5/6 mx-auto font-semibold text-xl text-white font-[Mulish]">
+              <h1>Explore my github projects and repository</h1>
+            </div>
+            <div>
+            <button class="mx-auto ml-[34%] mt-10 px-4 py-2 bg-red-500 text-white rounded-lg">Click me</button>
 
-    </div>
-</div>
-    
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="script.js"></script>
-</body>
+            </div>
+          </div>
+          <div class="w-1/5 h-full bg-red-500"></di
+          <div class="w-1/5 h-full bg-red-500"></div>
+          <div class="w-1/5 h-full bg-red-500"></div>
+          
+        </div>
+      </div>
+      
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         ></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         ></script>
+      <script src="script.js"></script>
+   </body>
 </html>
