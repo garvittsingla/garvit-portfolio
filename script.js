@@ -6,6 +6,7 @@ var vid2 = document.querySelector("#vid2")
 var vid3 = document.querySelector("#vid3")
 var profilesec = document.querySelector("#profilesec")
 var cursor = document.querySelector("#cursor")
+var dts = document.querySelector("#dts")
 gsap.registerPlugin(ScrollTrigger);
 
 function firstpageanimation(){
@@ -188,6 +189,10 @@ gsap.from("#profilesec",{
         end:"top 70%",
         // markers:true
     }
+})
+
+dts.addEventListener("click",function(){
+    window.location.href="https://www.instagram.com/design_thinking_chitkara/"
 })
 firstpageanimation()
 secondpageanimation()
