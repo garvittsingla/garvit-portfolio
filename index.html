@@ -38,22 +38,22 @@
    <body class="bg-[#0C0C0C] text-[#E9E9E9] overflow-x-hidden">
       <div
          id="cursor"
-         class="h-[20px] w-[20px] bg-orange-500 fixed rounded-full z-[99] text-[5px] font-semibold text-center"
+         class="hidden md:inline-block h-[20px] w-[20px] bg-orange-500 fixed rounded-full z-[99] text-[5px] font-semibold text-center"
          ></div>
-      <div id="page1" class="h-screen w-full">
+      <div id="page1" class="h-screen w-full ">
          <nav
             class="text-lg w-5/6 mx-auto flex justify-between font-['Ubuntu'] items-center h-24"
             >
             <div class="">Garvit Singla</div>
-            <div class="flex gap-6 drop-shadow-lg font-semibold">
+            <div class="hidden md:flex gap-6 drop-shadow-lg font-semibold">
                <a class="hover:text-orange-500" href="#page2">Skills</a>
                <a class="hover:text-orange-500" href="#page4">Profiles</a>
                <a class="hover:text-orange-500" href="#emailid">Got a Question?</a>
             </div>
          </nav>
-         <div class="flex w-5/6 mx-auto h-96 mt-16" id="section1">
-            <div class="w-1/2 h-full flex flex-col items-center gap-10 mt-8">
-               <div class="flex flex-col items-center gap-3">
+         <div class="flex flex-col md:flex-row w-5/6 mx-auto h-96 sm:mt-6 md:mt-16" id="section1">
+            <div class="w-full md:w-1/2 h-full flex flex-col items-center gap-10 mt-8">
+               <div class="flex flex-col items-center gap-8 md:gap-3">
                   <span
                      id="heading"
                      class="font-['Mulish'] text-8xl leading-16 font-semibold text-center"
@@ -70,7 +70,7 @@
                   >
                See my Projects
                </button>
-               <div id="para" class="text-zinc-600 font-semibold">
+               <div id="para" class="sm:w-full text-zinc-600 font-semibold text-center">
                   Hi, I'm Garvit Singla, a passionate web developer with expertise in
                   <span class="text-orange-600"
                      >HTML, CSS, JavaScript, Tailwind, and GSAP</span
@@ -80,27 +80,27 @@
                   together in every build!
                </div>
             </div>
-            <div class="w-1/2 h-full rounded-lg bg-zinc-00 relative">
-               <img id="svg1" src="svg1.svg" alt="" />
+            <div class="w-full md:w-1/2 h-full rounded-lg bg-zinc-00 relative">
+               <img class="hidden md:inline-block" id="svg1" src="svg1.svg" alt="" />
                <div
                   id="pfp"
                   class="absolute top-12 left-24 h-96 rounded-lg mx-auto bg-[#FB8500] p-4 shadow-[0px_0px_30px_9px_rgba(234,88,12,0.4)]"
                   >
                   <div
-                     class="overlay bg-transparent h-full w-full absolute z-[999]"
+                     class="overlay hidden md:inline-block bg-transparent h-full w-full absolute z-[999]"
                      ></div>
                   <a href="https://x.com/garvits093" target="_blank"
                      ><img
-                     class="h-full rounded-lg cursor-pointer"
+                     class="h-full w-full rounded-lg cursor-pointer"
                      src="IMG_20240225_130724_142.webp"
                      alt=""
                      /></a>
                </div>
-               <div class="absolute right-12 bottom-0">
-                  <img id="svg2" src="svg2.svg" alt="" />
+               <div class="absolute right-12 bottom-0 hidden md:inline-block">
+                  <img  id="svg2" src="svg2.svg" alt="" />
                </div>
             </div>
-            <div class="h-[550px] absolute right-10 flex items-end justify-end">
+            <div class="h-[550px] hidden md:inline-block absolute right-10 md:flex items-end justify-end">
                <span>Scroll Down </span>
                <i class="text-orange-500 ri-arrow-down-line"></i>
             </div>
@@ -108,22 +108,22 @@
       </div>
       <div id="page2" class="h-screen w-full px-4">
          <div
-            class="mt-12 flex items-center justify-center h-[90%] pr-10 w-full relative"
+            class="mt-12 flex items-center justify-center  h-3/4 md:h-[90%] md:pr-10 w-full relative"
             >
-            <div id="skillss" class="relative w-3/4">
+            <div id="skillss" class="relative hidden md:inline-block w-3/4">
                <div
                   class="shadow-[0px_0px_40px_10px_rgba(234,255,255,0.4)] h-[0.01px] w-[276px] right-[140px] top-[300px] -translate-x-[100%] -translate-y-[100%] absolute"
                   ></div>
-               <img class=" " src="Web development (1) (1).png" alt="" />
+               <img class="hidden md:inline-block " src="Web development (1) (1).png" alt="" />
                <div
-                  class="font-['Playwrite-GB-S'] text-3xl font-semibold text-center"
+                  class="font-['Playwrite-GB-S']  text-3xl font-semibold text-center"
                   >
                   &lt; <span class="text-orange-600">b</span>e Unique
                   <span class="text-orange-600">b</span>e Different / &gt;
                </div>
             </div>
             <div
-               class="bg-orange-600 text-white w-1/4 h-5/6 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)] py-4"
+               class="bg-orange-600 text-white w-full mx-auto md:w-1/4 h-5/6 rounded-lg shadow-[0px_0px_28px_9px_rgba(234,88,12,0.2)] py-4"
                >
                <h1 class="text-center mt-5 text-3xl font-semibold">
                   My Skills <i class="ri-terminal-box-line"></i>
