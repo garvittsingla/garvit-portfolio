@@ -194,6 +194,25 @@ gsap.from("#profilesec",{
 dts.addEventListener("click",function(){
     window.location.href="https://www.instagram.com/design_thinking_chitkara/"
 })
-firstpageanimation()
-secondpageanimation()
-thirdpageanimations()
+
+
+
+function isMobile() {
+    return window.innerWidth < 768; 
+  }
+  
+  
+  function initGSAPAnimations() {
+    if (!isMobile()) {
+        firstpageanimation()
+        secondpageanimation()
+        thirdpageanimations()
+    }
+  }
+  
+  // Initialize animations on load
+  window.addEventListener('load', initGSAPAnimations);
+  
+  // Optional: Re-initialize on resize (if you need to handle orientation changes)
+  window.addEventListener('resize', initGSAPAnimations);
+  
