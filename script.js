@@ -4,6 +4,7 @@ var pfp = document.querySelector("#pfp")
 var vid1 = document.querySelector("#vid1")
 var vid2 = document.querySelector("#vid2")
 var vid3 = document.querySelector("#vid3")
+var profilesec = document.querySelector("#profilesec")
 var cursor = document.querySelector("#cursor")
 gsap.registerPlugin(ScrollTrigger);
 
@@ -176,7 +177,18 @@ function thirdpageanimations(){
         })
     })
 }
-
+gsap.from("#profilesec",{
+    opacity:0.5,
+    // duration:1,
+    stagger:1,
+    scrollTrigger:{
+        trigger:"#page4",
+        scrub:2,
+        start:"top 30%",
+        end:"top 70%",
+        // markers:true
+    }
+})
 firstpageanimation()
 secondpageanimation()
 thirdpageanimations()
