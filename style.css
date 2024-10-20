@@ -3,6 +3,6 @@ body {
     background-image:
       linear-gradient(to right, rgba(128, 128, 128, 0.140) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(128, 128, 128, 0.140) 1px, transparent 1px);
-      box-sizing: border-box;
+      
       
   }
